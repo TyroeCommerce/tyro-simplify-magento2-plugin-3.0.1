@@ -1,9 +1,9 @@
-# Simplify Commerce Payment Gateway for Magento 2
+# Tyro eCommerce for Magento 2
 
 ## Overview
-Simplify Commerce Payment Gateway module is a free Magento 2 module that adds Simplify Commerce as payment method on your Magento 2 checkout page. With simple configuration steps described below you can quickly start using Simplify Commerce's secure payment form for receiving payments in your online store. 
+Tyro eCommerce module is a free Magento 2 module that adds Tyro Simplify eCommerce as payment method on your Magento 2 checkout page. With simple configuration steps described below you can quickly start using Tyro Simplify eCommerce's secure payment form for receiving payments in your online store. 
 
-The module allows payments using Simplify Commerce Hosted Payments. Simplify Commerce Hosted Payments handle card data in safe and secure way, with full compliance with legal requirements. We use state-of-the-art encryption and tokenization to securely get payment information from your customer to our database. We monitor every transaction and manage sensitive payment data on our Level 1 PCI certified servers, which makes PCI compliance easier for you.
+The module allows payments using Tyro Simplify eCommerce Hosted Payments. Tyro Simplify eCommerce Hosted Payments handle card data in safe and secure way, with full compliance with legal requirements. We use state-of-the-art encryption and tokenization to securely get payment information from your customer to our database. We monitor every transaction and manage sensitive payment data on our Level 1 PCI certified servers, which makes PCI compliance easier for you.
 
 
 ## Prerequisites
@@ -19,10 +19,10 @@ The Standard payment form in some of the previous releases is now deprecated and
 ### Composer
 To download and install the components you need Composer, a PHP package manager. If it's not yet there on your Magento 2 server, install it first. Please follow the instructions specific for your operating system: [https://getcomposer.org/doc/00-intro.md](https://getcomposer.org/doc/00-intro.md)
 
-### Simplify Commerce Account
-Before you can use the module, you must have a Simplify Commerce account [https://www.simplify.com/commerce/](https://www.simplify.com/commerce/)
+### Tyro Simplify eCommerce Account
+Before you can use the module, you must have a Tyro Simplify eCommerce account [https://www.simplify.com/commerce/](https://www.simplify.com/commerce/)
 
-We recommend that you configure the module using Simplify Commerce Sandbox configuration. This way you can make sure everything works well, before you start receiving live payments. For testing module configuration you can use test card numbers provided by Simplify Commerce at [https://simplify.com/commerce/docs/testing/test-card-numbers](https://simplify.com/commerce/docs/testing/test-card-numbers). You will find more details about the configuration in the following chapters.     
+We recommend that you configure the module using Tyro Simplify eCommerce Sandbox configuration. This way you can make sure everything works well, before you start receiving live payments. For testing module configuration you can use test card numbers provided by Tyro Simplify eCommerce at [https://simplify.com/commerce/docs/testing/test-card-numbers](https://simplify.com/commerce/docs/testing/test-card-numbers). You will find more details about the configuration in the following chapters.     
 
 
 ## Installation
@@ -48,7 +48,7 @@ Run the following commands to download and install the module:
 
 When asked by Composer for user name and password for Magento repository at [https://repo.magento.com](https://repo.magento.com), enter the Magento Marketplace public key as user name, and private key as password.
 
-Verify whether the module has been succesfully installed. Log in to Magento Admin dashboard and go to *System* > *Web Setup Wizard* > *Component Manager*. Simplify Commerce module should be there at the end of the list. Please make sure that it's enabled. The status icon should be green. If it's red, you need to enable the module, by selecting *Enable* action in the actions drop-down at the right, then following the provided instructions. 
+Verify whether the module has been succesfully installed. Log in to Magento Admin dashboard and go to *System* > *Web Setup Wizard* > *Component Manager*. Tyro Simplify eCommerce module should be there at the end of the list. Please make sure that it's enabled. The status icon should be green. If it's red, you need to enable the module, by selecting *Enable* action in the actions drop-down at the right, then following the provided instructions. 
 
 ### Manual installation 
 If you prefer to deploy and install the module without Composer, proceed with the following steps:
@@ -64,11 +64,11 @@ Extract module files into that folder and execute the following commands:
     ./bin/magento setup:upgrade
     ./bin/magento cache:clean
     
-Verify whether the module has been succesfully installed. Log in to Magento Admin dashboard and go to *System* > *Web Setup Wizard* > *Component Manager*. Simplify Commerce module should be there at the end of the list. Please make sure that it's enabled. The status icon should be green. If it's red, you need to enable the module, by selecting *Enable* action in the actions drop-down at the right, then following the provided instructions. 
+Verify whether the module has been succesfully installed. Log in to Magento Admin dashboard and go to *System* > *Web Setup Wizard* > *Component Manager*. Tyro Simplify eCommerce module should be there at the end of the list. Please make sure that it's enabled. The status icon should be green. If it's red, you need to enable the module, by selecting *Enable* action in the actions drop-down at the right, then following the provided instructions. 
 
 
 ### Deinstallation
-If you want to uninstall the previously installed Simplify Commerce Payment Gateway module, please run the following commands:
+If you want to uninstall the previously installed Tyro eCommerce module, please run the following commands:
 
     ./bin/magento module:uninstall MasterCard_SimplifyCommerce
     ./bin/magento setup:upgrade
@@ -82,18 +82,18 @@ Please follow these steps to configure the module:
 
 1. Login to Magento Admin dashboard 
 2. Go to *Stores* > *Configuration* > *Sales* > *Payment Methods*
-3. Expand *OTHER PAYMENT METHODS*, then *Simplify Commerce by MasterCard*
+3. Expand *OTHER PAYMENT METHODS*, then *Tyro Simplify eCommerce by MasterCard*
 4. Fill in configuration details as described below
 5. Click Save Config to store the configuration.
 6. Follow Magento instructions and clean application cache, to make sure that the new payment method is immediately available in your online store.  
 
 ### Configuration details
-The following settings are available in Simplify Commerce Payment Gateway configuration screen:
+The following settings are available in Tyro eCommerce configuration screen:
 
-* *Enabled*: should be set to YES, to make Simplify Commerce available as payment method on checkout page
+* *Enabled*: should be set to YES, to make Tyro Simplify eCommerce available as payment method on checkout page
 * *Title*: name of the payment method displayed on checkout page
-* *Public API Key*: secret key from your Simplify Commerce Merchant Dashboard. For testing the module please use the Sandbox key. Once you see that payments from Magento 2 with test card numbers are visible in your Simplify Commerce Merchant Dashboard, you should come back here and enter the Live key. From this moment you will be able to receive payments from real credit cards.
-* *Private API Key*: the second secret key from Simplify Commerce Merchant Dashboard. The same rules as above apply.
+* *Public API Key*: secret key from your Tyro Simplify eCommerce Merchant Dashboard. For testing the module please use the Sandbox key. Once you see that payments from Magento 2 with test card numbers are visible in your Tyro Simplify eCommerce Merchant Dashboard, you should come back here and enter the Live key. From this moment you will be able to receive payments from real credit cards.
+* *Private API Key*: the second secret key from Tyro Simplify eCommerce Merchant Dashboard. The same rules as above apply.
 * *Display Order*: position, at which this payment method should be listed on checkout page
 * *New Order Status*: status assigned to a newly created order, before the payment has been received
 * *Payment Action*: determines when the buyer's card will be charged. If you select *Authorize and Capture*, the card will be charged immediately. If you select *Authorize*, the payment will be verified and authorized, but no money will charged yet. Only when you issue an invoice for the received order, will the card be charged.    
